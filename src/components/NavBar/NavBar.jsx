@@ -11,12 +11,12 @@ const NavBar = () => {
     <> 
     <Navbar className='colorNav'>
         <Container>
-          <Navbar.Brand href="#home">Música</Navbar.Brand>
+          <Navbar.Brand className='estiloNavText' href="#home">Libreria</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Inicio</Nav.Link>
-            <Nav.Link href="#features">Biografias</Nav.Link>
-            <Nav.Link href="#pricing">Tienda</Nav.Link>
-            <Nav.Link href='#'>Iniciar Sesión</Nav.Link>
+            <Nav.Link className='estiloNavText' href="#home">Inicio</Nav.Link>
+            <Nav.Link className='estiloNavText' href="#pricing">Tienda</Nav.Link>
+            <Nav.Link className='estiloNavText' href="#">Contacto</Nav.Link>
+            <Nav.Link className='estiloNavText' href='#'>Iniciar Sesión</Nav.Link>
           </Nav>
           <CartWidget/>
         </Container>
