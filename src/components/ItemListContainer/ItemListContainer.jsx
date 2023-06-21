@@ -1,16 +1,20 @@
-/* eslint-disable react/prop-types */
 
-// import React from 'react'
+import { useState, useEffect } from "react"
+import ItemList from "../ItemList/ItemList"
+import { getProductos } from "../../asyncmock"
 
-// props es un objeto
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
+    const [productos, setProductos] = useState([]);
 
+    useEffect( () => {
+        getProductos()
+        .then(respuesta => setProductos(respuesta))
+    }, [])
+    console.log(productos);
     return (
         <div>
-            <h1 className="text-center">
-                {props.greeting}
-            </h1>
-            
+            <h2>Mis productos</h2>
+            <ItemList productos = {productos}/>
         </div>
     )
 }
