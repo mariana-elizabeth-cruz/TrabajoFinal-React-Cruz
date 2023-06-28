@@ -1,17 +1,27 @@
-
+// import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom'
 import './Item.css'
 
 
-const Item = ({id, nombre, precio, img}) => {
+// eslint-disable-next-line react/prop-types
+const Item = ({ id, nombre, precio, img }) => {
   return (
-    <div>
-        <img src={img} alt={nombre} />
-        <h3>Nombre: {nombre} </h3>
-        <p>Precio ${precio}</p>
-        <p>Id: {id}</p>
-        <button> Ver Detalle </button>
+    <div className='boxProducto'>
+
+      <Card style={{ width: '18rem' }}>
+        <Card.Img className='estiloImg' variant="top" src={img} alt={nombre} />
+        <Card.Body className='estiloProd'>
+          <Card.Title> {nombre} </Card.Title>
+          <Card.Text>Precio ${precio} </Card.Text>
+          <Link to={`/item/${id}`} > Ver Detalle </Link>
+        </Card.Body>
+      </Card>
+
+
     </div>
   )
 }
 
 export default Item
+
