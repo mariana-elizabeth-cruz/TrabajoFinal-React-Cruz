@@ -2,7 +2,8 @@ import { useContador } from "../../UseContador"
 import './Contador.css'
 
 
-const Contador = () => {
+// eslint-disable-next-line react/prop-types
+const Contador = ({funcionAgregar}) => {
     const {contador, aumentarCont, disminuirCont} = useContador(1, 10)
     
     
@@ -11,7 +12,7 @@ const Contador = () => {
             <button onClick={disminuirCont}> - </button>
             <strong> {contador} </strong>
             <button onClick={aumentarCont}> + </button>
-            <button id="boton"> Agregar al carrito </button>
+            <button id="boton" onClick={() => funcionAgregar(contador)} > Agregar al carrito </button>
         </div>
     )
 }
