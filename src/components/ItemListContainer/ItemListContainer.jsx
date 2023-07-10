@@ -24,30 +24,30 @@ const ItemListContainer = () => {
         <div className='container'>
             <h2 className="estiloTexto">Mis productos</h2>
 
-            <ul className="estiloLink">
+            <ul className="estiloLista">
                 <li>
-                    <NavLink to={"/categoria/1"}> Alcatel </NavLink>
+                    <NavLink to={"/categoria/1"} className="estiloLink" > Alcatel </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/2"}> Iphone </NavLink>
+                    <NavLink to={"/categoria/2"} className="estiloLink" > Iphone </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/3"}> Motorola </NavLink>
+                    <NavLink to={"/categoria/3"} className="estiloLink" > Motorola </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/8"}> Nokia </NavLink>
+                    <NavLink to={"/categoria/8"} className="estiloLink" > Nokia </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/4"}> Quantum </NavLink>
+                    <NavLink to={"/categoria/4"} className="estiloLink" > Quantum </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/5"}> Samsung </NavLink>
+                    <NavLink to={"/categoria/5"} className="estiloLink" > Samsung </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/6"}> TLC </NavLink>
+                    <NavLink to={"/categoria/6"} className="estiloLink" > TLC </NavLink>
                 </li>
                 <li>
-                    <NavLink to={"/categoria/7"}> ZTE </NavLink>
+                    <NavLink to={"/categoria/7"} className="estiloLink" > ZTE </NavLink>
                 </li>
             </ul>
             <ItemList productos={productos} />

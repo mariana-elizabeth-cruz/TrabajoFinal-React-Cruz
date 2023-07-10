@@ -6,3 +6,22 @@
     font-family: 'Gruppo', sans-serif;
     
 }
+
+.estiloLista {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.estiloLista li {
+    display: inline-block;
+}
+
+.estiloLink {
+    font-family: 'Gruppo', sans-serif;
+    /* font-family: 'Montserrat Alternates', sans-serif; */
+    font-size: 25px;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: black;
+}
