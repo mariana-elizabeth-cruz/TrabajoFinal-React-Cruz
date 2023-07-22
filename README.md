@@ -2,19 +2,19 @@
 Este es un proyecto de ecommerce básico que se utiliza para el curso de React. La aplicación permite ver una lista de productos de una tienda de celulares y realizar compras en línea. Los productos y las órdenes de compra se almacenan en Firebase.
 
 ## Tecnologías utilizadas
--Vite
--React
--React Router
--Firebase
+- Vite
+- React
+- React Router
+- Firebase
 
 ## Funcionalidades
--Ver una lista de productos disponibles y su stock
--Agregar productos al carrito de compras
--Ver el carrito de compras
--Eliminar un producto del carrito
--Vaciar el carrito
--Realizar una orden de compra
--Enviar un mensaje a Tienda Mobile
+- Ver una lista de productos disponibles y su stock
+- Agregar productos al carrito de compras
+- Ver el carrito de compras
+- Eliminar un producto del carrito
+- Vaciar el carrito
+- Realizar una orden de compra
+- Enviar un mensaje a Tienda Mobile
 
 ## Instalación
 
@@ -28,11 +28,11 @@ Este es un proyecto de ecommerce básico que se utiliza para el curso de React. 
 ## Configuración de Firebase
 
 ### Para utilizar Firebase en esta aplicación, debes seguir los siguientes pasos:
-1- Crea una cuenta en Firebase y crea un nuevo proyecto.
-2- En la sección "Authentication" de Firebase, habilita el proveedor de la autenticación de correo electrónico y contraseña.
-3- En la sección "Firestore" de Firebase, crea una nueva base de datos y configura las reglas de seguridad para permitir lectura/escritura solamente a usuarios autenticados.
-4- En la sección "Project settings" de Firebase, haz clic en "Add app" y sigue las instrucciones para agregar una nueva aplicación web.
-5- Copia las credenciales de Firebase y configura las variables de entorno en el archivo .env de tu proyecto.
+1. Crea una cuenta en Firebase y crea un nuevo proyecto.
+2. En la sección "Authentication" de Firebase, habilita el proveedor de la autenticación de correo electrónico y contraseña.
+3. En la sección "Firestore" de Firebase, crea una nueva base de datos y configura las reglas de seguridad para permitir lectura/escritura solamente a usuarios autenticados.
+4. En la sección "Project settings" de Firebase, haz clic en "Add app" y sigue las instrucciones para agregar una nueva aplicación web.
+5. Copia las credenciales de Firebase y configura las variables de entorno en el archivo .env de tu proyecto.
 
 ## Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más información.
