@@ -8,17 +8,16 @@ import './Item.css'
 const Item = ({ id, nombre, precio, img }) => {
   return (
     <div className='boxProducto'>
-
-      <Card style={{ width: '18rem' }}>
+      <Card className='boxColor'>
         <Card.Img className='estiloImg' variant="top" src={img} alt={nombre} />
         <Card.Body className='estiloProd'>
-          <Card.Title> {nombre} </Card.Title>
+          <Card.Title> <strong> Celular {nombre} </strong> </Card.Title>
           <Card.Text>Precio ${precio} </Card.Text>
-          <Link to={`/item/${id}`} > Ver Detalle </Link>
+          <div className='boxDetalle'>
+            <Link className='btnDetalle' to={`/item/${id}`} > Ver Detalle </Link>
+          </div>
         </Card.Body>
       </Card>
-
-
     </div>
   )
 }

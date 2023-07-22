@@ -1,3 +1,10 @@
 .carrito {
     width: 70px;
 }
+
+.estiloCarrito {
+    text-decoration: none;
+    color: #083028;
+    margin: 5px;
+    padding: 5px;
+}

@@ -5,6 +5,7 @@ import { db } from "../../services/config"
 
 // prueba de envio de datos
 import Formulario from "../Formulario/Formulario"
+import './Productos.css'
 
 const Productos = () => {
     const [producto, setProducto] = useState([]);
@@ -34,12 +35,13 @@ const Productos = () => {
         <div>
             <Formulario />
             <hr />
-            <h2>Productos de la lista</h2>
-            <div>
+            <h2 className="text-center" >Productos de la lista</h2>
+            <div className="container">
                 {
                     producto.map(prod => (
                         <div key={prod.id}>
                             <h2> {prod.nombre} </h2>
+                            <img className="imgProductos" src={prod.img} alt={prod.nombre} />
                             <p> precio: {prod.precio} </p>
                             <p>stock: {prod.stock} </p>
                             <button onClick={() => descontarStock(prod)} > Comprar </button>

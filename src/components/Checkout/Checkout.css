@@ -1,0 +1,115 @@
+.checkoutSection {
+    font-family: "Gruppo", sans-serif;
+}
+
+.checkoutSection h2 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 15px;
+    padding: 5px;
+}
+
+.boxForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mostrarProducto {
+    width: 20rem;
+    border: 4px solid #303e30;
+    border-radius: 20px;
+    border-style: outset;
+    border-right: none;
+    border-bottom: none;
+    margin: 10px 10px 15px 10px;
+    padding: 10px;
+}
+
+.mostrarProducto p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.boxFormularioCompra {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 5px 5px 15px #000000;
+}
+
+.boxFormularioCompra h3 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.boxFormularioCompra label {
+    margin: 10px;
+    padding: 7px;
+    font-size: 30px;
+}
+
+.boxFormularioCompra input {
+    width: 100%;
+}
+
+.btnFinalizarCompra {
+    background-color: #4b8b63;
+    color: #083028;
+    margin: 20px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.btnFinalizarCompra:hover {
+    background-color: #0c473c;
+    color: #57a174;
+    border-color: #083028;
+}
+
+.compraExitosa {
+    text-align: center;
+    font-size: 25px;
+    margin: 15px;
+    padding-bottom: 15px;
+}
+
+/* MEDIA QUERY MOVIL */
+@media screen and (max-width: 767px) {
+    .checkoutSection h2 {
+        font-size: 30px;
+    }
+
+    .mostrarProducto p {
+        font-size: 23px;
+    }
+
+    .boxFormularioCompra h3 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .boxFormularioCompra label {
+        font-size: 25px;
+    }
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .checkoutSection h2 {
+        font-size: 40px;
+    }
+}

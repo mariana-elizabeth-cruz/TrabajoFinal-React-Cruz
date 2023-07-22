@@ -40,31 +40,28 @@ const Contacto = () => {
 
 
     return (
-        <>
+        <section className='container sectionContacto '>
             <div className='estiloContacto'>
-                <h1>Contacta me</h1>
+                <h2>Dejanos aquí tu mensaje</h2>
             </div>
-            <div className='estiloForm'>
-                <form onSubmit={enviarMensaje} className='container'>
-                    <Form.Group md="mb-3" controlId="validationCustom01">
+            <div className='estiloFormularioContacto'>
+                <form onSubmit={enviarMensaje} className='formTexto'>
+                    <Form.Group md="mb-3" controlId="nombre">
                         <Form.Label>Nombre</Form.Label>
                         <Form.Control required type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                    <Form.Group className="mb-3" controlId="email">
                         <Form.Label>Correo Electrónico</Form.Label>
-                        <Form.Control required type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="name@example.com" />
+                        <Form.Control required type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="nombre@ejemplo.com" />
                     </Form.Group>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                    <Form.Group className="mb-3" controlId="mensaje">
                         <Form.Label>Mensaje</Form.Label>
                         <Form.Control required as="textarea" rows={5} value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
                     </Form.Group>
-                    <button type="submit"> Enviar Mensaje </button>
-
-
+                    <button type="submit" className='btnEnviarMsj' > Enviar Mensaje </button>
                 </form>
             </div>
-
-        </>
+        </section>
     )
 }
 

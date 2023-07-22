@@ -1,11 +1,48 @@
 .colorNav {
-    background-color: #617871ff;
+    background-color: #426850;
+    box-shadow: 1px 1px 15px #000000;
 }
-.estiloNavText{
-    font-size: 20px;
-    font-family: 'Montserrat Alternates', sans-serif;
+
+.estiloNavText {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-size: 25px;
     font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    transition: 1s all;
 }
 
+.estiloNavText:hover {
+    transform: scale(1.1);
+    text-shadow: 1px 1px 8px #091518;
+}
 
+.logoNav {
+    width: 130px;
+}
 
+/* MEDIA QUERY MOVIL */
+@media screen and (max-width: 767px) {
+    .estiloNavText {
+        font-size: 15px;
+        margin: 5px;
+        padding: 3px;
+    }
+
+    .estiloNavText:hover {
+        transition: scale(0);
+    }
+}
+
+/* MEDIA QUERY TABLET */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .estiloNavText {
+        font-size: 20px;
+    }
+
+    .estiloNavText:hover {
+        transition: scale(0);
+    }
+}

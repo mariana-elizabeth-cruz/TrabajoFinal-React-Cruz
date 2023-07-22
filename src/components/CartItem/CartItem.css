@@ -1,0 +1,44 @@
+.sectionDetalle {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.boxDetalleCompra {
+    width: 20rem;
+    margin: 1rem;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+    background-color: #bfc8ff;
+}
+
+.boxDetalleTitulo {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.boxDetalleCompra button {
+    background-color: #00907e;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.boxDetalleCompra button:hover {
+    background-color: #016e62;
+    border: 1px solid #00907e;
+}
+
+/* MEDIA QUERY MOVIL */
+@media screen and (max-width: 767px) {
+    .boxDetalleCompra {
+        font-size: 20px;
+    }
+    .boxDetalleTitulo {
+        font-size: 20px;
+    }
+
+}

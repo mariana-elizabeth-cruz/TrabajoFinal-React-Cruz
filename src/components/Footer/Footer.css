@@ -1,0 +1,14 @@
+footer {
+    background-color: #010000;
+    height: 230px;
+}
+.footerText {
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #a7a7a7;
+}
+.iconos li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}

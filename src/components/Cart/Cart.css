@@ -1,0 +1,71 @@
+.sectionPadreDetalle {
+    font-family: 'Gruppo', sans-serif;
+}
+
+.detalleTitulo {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem;
+    padding: 1rem;
+    letter-spacing: 5px;
+}
+
+.detalleTotal {
+    text-align: center;
+    margin: 15px 0 40px 0;
+    padding: 10px 0 10px;
+}
+
+.btnVaciar {
+    background-color: #4b8b63;
+    color: #083028;
+    margin: 15px;
+    padding: 0 18px 0 18px;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.btnCompra {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #4b8b63;
+    color: #083028;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10px;
+    border-style: outset;
+    border-top: none;
+    border-left: none;
+    padding: 10px;
+}
+
+.sinProductos {
+    font-family: 'Gruppo', sans-serif;
+    text-align: center;
+    margin: 3rem;
+    padding: 2rem;
+}
+
+.sinProductos h2{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.sinProductos p {
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+
+/* MEDIA QUERY MOVIL */
+@media screen and (max-width: 767px) {
+    .detalleTitulo {
+        font-size: 40px;
+    }
+}

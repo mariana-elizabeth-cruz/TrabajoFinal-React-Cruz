@@ -1,0 +1,22 @@
+.boxContador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxContador button {
+    margin: 8px;
+    border-radius: 8px;
+}
+
+.btnCont {
+    background-color: #4b8b63;
+    color: #083028;
+    padding: 0 18px 0 18px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btnNum {
+    font-size: 30px;
+}

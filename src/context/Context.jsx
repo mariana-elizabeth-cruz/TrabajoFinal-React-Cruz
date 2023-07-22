@@ -1,5 +1,6 @@
 import { useState, createContext } from "react";
 
+// creamos el conextto
 export const CarritoContext = createContext({
     // Aqui se almacenan los productos comprados
     carrito: [],
@@ -7,9 +8,9 @@ export const CarritoContext = createContext({
     cantidadTotal: 0
 })
 
+
 // eslint-disable-next-line react/prop-types
 export const CarritoProvider = ({ children }) => {
-
     const [carrito, setCarrito] = useState([]);
     const [total, setTotal] = useState(0);
     const [cantidadTotal, setCantidadTotal] = useState(0);

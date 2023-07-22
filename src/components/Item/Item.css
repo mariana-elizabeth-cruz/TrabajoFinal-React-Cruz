@@ -1,11 +1,66 @@
 .estiloImg {
-    /* width: 250px; */
     padding: 10px;
 }
 .boxProducto {
     margin: 15px;
+    padding: 10px 2px 15px 2px;
+}
+
+.boxColor {
+    width: 18rem;
+    box-shadow: 10px 10px 20px #000000;
+    background-color: #f1effc;
+    transition: all 1s;
+}
+.boxColor:hover {
+    transform: scale(1.1);
 }
 .estiloProd {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 25px;
+    text-align: center;
     margin: 25px;
     padding: 15px;
 }
+
+.btnDetalle {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.boxDetalle {
+    padding-bottom: 4px;
+    border-radius: 10px;
+    background-color: rgb(58, 100, 100);
+    transition: all 0.5s;
+}
+
+.boxDetalle:hover {
+    transform: scale(1.1);
+}
+
+/* MEDIA QUERY MOVIL */
+/* @media screen and (max-width: 767px) {
+    .boxColor {
+        transition: all 0s;
+    }
+    .boxColor:hover {
+        transform: scale(0);
+    }
+
+} */
+
+/* MEDIA QUERY TABLET */
+/* @media (min-width: 768px) and (max-width: 1023px) {
+    .boxColor {
+        width: 13rem;
+        transition: all 0s;
+    }
+    .boxColor:hover {
+        transform: scale(0);
+    }
+    
+    
+} */
