@@ -8,8 +8,6 @@ const CartWidget = () => {
   const carrito = "/imagenes/carrito.png";
   const { cantidadTotal } = useContext(CarritoContext);
 
-
-
   return (
     <section>
       <Link to={"/cart"} className="estiloCarrito" >

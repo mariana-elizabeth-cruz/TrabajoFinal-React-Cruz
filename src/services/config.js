@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDXTeGyWs1evxbQ9L9NZqj-1RKEvscJhOE",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "proyectocoderreact-e1a65.firebaseapp.com",
   projectId: "proyectocoderreact-e1a65",
   storageBucket: "proyectocoderreact-e1a65.appspot.com",

@@ -5,7 +5,7 @@ import './Item.css'
 
 
 // eslint-disable-next-line react/prop-types
-const Item = ({ id, nombre, precio, img }) => {
+const Item = ({ id, nombre, precio, img, stock }) => {
   return (
     <div className='boxProducto'>
       <Card className='boxColor'>
@@ -13,6 +13,7 @@ const Item = ({ id, nombre, precio, img }) => {
         <Card.Body className='estiloProd'>
           <Card.Title> <strong> Celular {nombre} </strong> </Card.Title>
           <Card.Text>Precio ${precio} </Card.Text>
+          <Card.Text>Stock: {stock} </Card.Text>
           <div className='boxDetalle'>
             <Link className='btnDetalle' to={`/item/${id}`} > Ver Detalle </Link>
           </div>

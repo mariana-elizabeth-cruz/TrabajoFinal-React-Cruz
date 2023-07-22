@@ -14,8 +14,6 @@ export const CarritoProvider = ({ children }) => {
     const [carrito, setCarrito] = useState([]);
     const [total, setTotal] = useState(0);
     const [cantidadTotal, setCantidadTotal] = useState(0);
-    // console para verificar si se agregan los productos al carrito
-    console.log(carrito);
 
     const agregarProducto = (item, cantidad) => {
         const productoExiste = carrito.find(prod => prod.item.id === item.id);

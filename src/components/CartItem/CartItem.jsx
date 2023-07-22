@@ -11,7 +11,7 @@ const CartItem = ({ item, cantidad }) => {
   const { eliminarProducto } = useContext(CarritoContext);
 
   return (
-    <section className="sectionDetalle">
+    <section className="sectionDetalle" key={item.id}>
         <Card className="boxDetalleCompra">
           <Card.Body >
             <Card.Title className="boxDetalleTitulo" > {item.nombre} </Card.Title>
@@ -27,11 +27,3 @@ const CartItem = ({ item, cantidad }) => {
 
 export default CartItem
 
-
-
-
-
-// VITE_FIREBASE_API_KEY =
-// apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-// para pasar del asyncmock a la bd
-// La función addDoc de guardar la orden, cambiala por productos 

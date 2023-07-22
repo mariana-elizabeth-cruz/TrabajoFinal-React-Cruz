@@ -7,7 +7,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "./NavBar.css"
 
 
-
 const NavBar = () => {
 
   return (

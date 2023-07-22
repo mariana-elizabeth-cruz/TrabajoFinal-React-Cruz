@@ -24,8 +24,7 @@ const Cart = () => {
   }
 
   return (
-    // se muestra detalles de la compra en el carrito
-    <section className="sectionPadreDetalle">
+    <section className="sectionPadreDetalle" >
       <h2 className="detalleTitulo"> Detalle de su compra </h2>
       {carrito.map(producto => <CartItem key={producto.id} {...producto} />)}
       <div className="detalleTotal">

@@ -32,7 +32,6 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
             <Card.Text className='textProducto'> Precio $ {precio} </Card.Text>
             <Card.Text className='textProducto'> Id: {id} </Card.Text>
             <Card.Text className='textProducto'> Detalle </Card.Text>
-            {/* en terminar compra se rompe  */}
             {
               agregarCant > 0 ? (<Link to={"/cart"} className='btnCompra' > Terminar Compra </Link>) : (<Contador inicial={1} stock={stock} funcionAgregar={manejarCantidad} />)
             }

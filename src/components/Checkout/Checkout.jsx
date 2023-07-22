@@ -1,7 +1,7 @@
 import { useState, useContext } from "react"
 import { CarritoContext } from '../../context/context'
 import { db } from "../../services/config"
-import { collection, addDoc } from "firebase/firestore"
+import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
 import './Checkout.css'
 
 
@@ -46,15 +46,34 @@ const Checkout = () => {
       fecha: new Date()
     };
 
-    addDoc(collection(db, "ordenes"), orden)
-      .then(docRef => {
-        setOrdenId(docRef.id);
-        vaciarCarrito();
+    Promise.all(
+      orden.items.map(async (productoOrden) => {
+        const producRef = doc(db, "productos", productoOrden.id);
+        const producDoc = await getDoc(producRef);
+        const stockActual = producDoc.data().stock;
+        // se actualiza el stock
+        await updateDoc(producRef, {
+          stock: stockActual - productoOrden.cantidad
+        });
       })
-      .catch(error => {
-        console.log("Se produjo un error", error);
-        setError("Se produjo un error al generar la orden de compra");
+    )
+      .then(() => {
+        // Se guarda la orden en la base de datos
+        addDoc(collection(db, "ordenes"), orden)
+          .then((docRef) => {
+            setOrdenId(docRef.id);
+            vaciarCarrito();
+          })
+          .catch((error) => {
+            console.log("Se produjo un error", error);
+            setError("Se produjo un error al generar la orden de compra");
+          })
       })
+      .catch((error) => {
+        console.log("Error al actualizar stock", error);
+        setError("Se produjo un error al actualziar stock.");
+      })
+
   }
 
 

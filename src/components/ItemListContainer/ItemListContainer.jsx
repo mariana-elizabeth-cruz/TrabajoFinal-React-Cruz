@@ -1,10 +1,8 @@
 
 import { useState, useEffect } from "react"
 import ItemList from "../ItemList/ItemList"
-// import { getProductos, getCategoria } from "../../asyncmock"
 import { NavLink } from "react-router-dom"
 import { useParams } from "react-router-dom"
-// funciones firebase
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../../services/config";
 import './ItemListContainer.css'
@@ -12,17 +10,6 @@ import './ItemListContainer.css'
 const ItemListContainer = () => {
     const [productos, setProductos] = useState([]);
     const { idCategoria } = useParams();
-
-    // useEffect que trabaja con asyncmock
-    // useEffect(() => {
-    //     const funcionProducto = idCategoria ? getCategoria : getProductos;
-
-    //     funcionProducto(idCategoria)
-    //         .then(respuesta => setProductos(respuesta))
-    //         .catch(error => console.log(error))
-
-    // }, [idCategoria])
-
 
     // useEffect que se conecta con la base de datos
     useEffect(() => {

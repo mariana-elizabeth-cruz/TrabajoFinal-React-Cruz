@@ -1,5 +1,6 @@
 import Form from 'react-bootstrap/Form';
-import { useState } from "react"
+import { useState } from "react";
+import Swal from 'sweetalert2';
 import emailjs from "emailjs-com"
 import './Contacto.css'
 
@@ -7,6 +8,7 @@ const Contacto = () => {
     const [nombre, setNombre] = useState("");
     const [email, setEmail] = useState("");
     const [mensaje, setMensaje] = useState("");
+
 
     const enviarMensaje = (e) => {
         e.preventDefault();
@@ -24,12 +26,20 @@ const Contacto = () => {
             "edEpJkHeok-dEXWeV"
         )
             .then((respuesta) => {
-                console.log(respuesta.text);
-                alert("Mensaje enviado");
-            })
-            .catch((error) => {
-                console.log(error);
-                alert("Error de mensaje");
+                if (respuesta.text) {
+                    Swal.fire({
+                        title: 'Muchas Gracias!',
+                        text: 'Su mensaje se envio exitosamente!',
+                        icon: 'success',
+                        confirmButtonColor: '#083028'
+                    })
+                } else {
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Ocurrio un error!'
+                    })
+                }
             })
 
         setNombre("");
