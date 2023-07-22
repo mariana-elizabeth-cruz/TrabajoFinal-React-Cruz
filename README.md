@@ -6,6 +6,9 @@ Este es un proyecto de ecommerce básico que se utiliza para el curso de React. 
 - React
 - React Router
 - Firebase
+- React Bootstrap
+- React Icons
+- SweetAlert
 
 ## Funcionalidades
 - Ver una lista de productos disponibles y su stock
