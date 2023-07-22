@@ -2,6 +2,7 @@ import { useState, useContext } from "react"
 import { CarritoContext } from '../../context/context'
 import { db } from "../../services/config"
 import { collection, addDoc, updateDoc, doc, getDoc } from "firebase/firestore"
+import { Link } from 'react-router-dom'
 import './Checkout.css'
 
 
@@ -128,6 +129,9 @@ const Checkout = () => {
             <strong>Gracias por su compre. Su numero de orden es: {ordenId} </strong>
           )
         }
+      </div>
+      <div className="btnSeguir">
+        <Link to={"/"} className="btnSeguirComprando"> Seguir comprando </Link>
       </div>
     </section>
   )

@@ -84,9 +84,29 @@
     text-align: center;
     font-size: 25px;
     margin: 15px;
-    padding-bottom: 15px;
 }
 
+.btnSeguir {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.btnSeguirComprando {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #4b8b63;
+    color: #083028;
+    text-decoration: none;
+    border: 3px solid black;
+    border-radius: 10px;
+    border-style: outset;
+    border-top: none;
+    border-left: none;
+    padding: 10px;
+}
 
 
 /* MEDIA QUERY MOVIL */
