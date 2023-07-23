@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
-import { CarritoContext } from '../../context/context';
+import { CarritoContext } from '../../context/Context';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './CartItem.css'

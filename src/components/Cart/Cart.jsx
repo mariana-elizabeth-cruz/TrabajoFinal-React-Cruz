@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { CarritoContext } from '../../context/context'
+import { CarritoContext } from '../../context/Context'
 import { Link } from "react-router-dom"
 import CartItem from "../CartItem/CartItem"
 import './Cart.css'

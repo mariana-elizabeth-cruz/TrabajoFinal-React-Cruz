@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Contador from '../Contador/Contador'
 import { useContext } from 'react'
-import { CarritoContext } from '../../context/context'
+import { CarritoContext } from '../../context/Context'
 import Card from 'react-bootstrap/Card';
 import './ItemDetail.css'
 
