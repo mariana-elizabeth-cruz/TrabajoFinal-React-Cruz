@@ -1,5 +1,13 @@
-.sectionPadreDetalle {
-    font-family: 'Gruppo', sans-serif;
+.cart {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.cartPadreDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
 }
 
 .detalleTitulo {
@@ -9,6 +17,7 @@
     margin: 2rem;
     padding: 1rem;
     letter-spacing: 5px;
+    color: #484d41;
 }
 
 .detalleTotal {
@@ -18,31 +27,42 @@
 }
 
 .btnVaciar {
-    background-color: #4b8b63;
-    color: #083028;
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    color: #272a2a;
     margin: 15px;
-    padding: 0 18px 0 18px;
-    font-size: 25px;
+    padding: 3px 20px 3px 20px;
+    font-size: 24px;
     font-weight: bold;
-    border-radius: 10px;
+    border-radius: 6px;
 }
 
-.btnCompra {
-    font-size: 25px;
+.btnVaciar:hover {
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    color: #1f2222;
+}
+
+.btnFinCompra {
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    color: #272a2a;
+    font-size: 24px;
     font-weight: bold;
-    background-color: #4b8b63;
-    color: #083028;
     text-decoration: none;
-    border: 3px solid black;
-    border-radius: 10px;
-    border-style: outset;
-    border-top: none;
-    border-left: none;
-    padding: 10px;
+    border: 2px solid #272a2a;
+    border-radius: 6px;
+    padding: 7px 15px 7px 15px;
+}
+
+.btnFinCompra:hover {
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    color: #1f2222;
 }
 
 .sinProductos {
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
     text-align: center;
     margin: 3rem;
     padding: 2rem;
@@ -53,6 +73,7 @@
     font-weight: bold;
     letter-spacing: 5px;
     text-transform: uppercase;
+    color: #484d41;
 }
 
 .sinProductos p {
@@ -62,6 +83,13 @@
     padding: 10px;
 }
 
+.boxSeguir {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
 
 /* MEDIA QUERY MOVIL */
 @media screen and (max-width: 767px) {

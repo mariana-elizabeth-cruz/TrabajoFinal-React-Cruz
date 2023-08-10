@@ -29,7 +29,7 @@ const ItemListContainer = () => {
 
     return (
         <section className='container'>
-            <h2 className="estiloTexto">Tienda Mobile</h2>
+            <h2 className="estiloTexto">Tienda MobiXpress</h2>
             <div className="boxGrid">
                 <div>
                     <ul className="estiloLista">

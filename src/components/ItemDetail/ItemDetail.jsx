@@ -7,7 +7,7 @@ import Card from 'react-bootstrap/Card';
 import './ItemDetail.css'
 
 // eslint-disable-next-line react/prop-types
-const ItemDetail = ({ id, nombre, precio, img, stock }) => {
+const ItemDetail = ({ id, nombre, precio, img, stock, detalle }) => {
   const [agregarCant, setAgregarCant] = useState(0);
   const { agregarProducto } = useContext(CarritoContext);
 
@@ -31,14 +31,14 @@ const ItemDetail = ({ id, nombre, precio, img, stock }) => {
               {nombre} </strong>  </Card.Title>
             <Card.Text className='textProducto'> Precio $ {precio} </Card.Text>
             <Card.Text className='textProducto'> Id: {id} </Card.Text>
-            <Card.Text className='textProducto'> Detalle </Card.Text>
+            {/* <Card.Text className='textProducto'> Detalle: {detalle} </Card.Text> */}
+            <p> Detalle: {detalle} </p>
             {
               agregarCant > 0 ? (<Link to={"/cart"} className='btnCompra' > Terminar Compra </Link>) : (<Contador inicial={1} stock={stock} funcionAgregar={manejarCantidad} />)
             }
           </Card.Body>
         </Card>
       </div>
-
 
     </section>
   )

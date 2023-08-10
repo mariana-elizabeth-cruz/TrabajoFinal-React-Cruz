@@ -14,7 +14,7 @@ const CartItem = ({ item, cantidad }) => {
     <section className="sectionDetalle" key={item.id}>
         <Card className="boxDetalleCompra">
           <Card.Body >
-            <Card.Title className="boxDetalleTitulo" > {item.nombre} </Card.Title>
+            <Card.Title className="boxDetalleProducto" > {item.nombre} </Card.Title>
             <Card.Text> Cantidad: {cantidad} </Card.Text>
             <Card.Text> Precio $ {item.precio} </Card.Text>
             <Button onClick={() => eliminarProducto(item.id)} > Eliminar </Button>

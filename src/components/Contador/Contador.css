@@ -6,17 +6,27 @@
 
 .boxContador button {
     margin: 8px;
-    border-radius: 8px;
+    border-radius: 7px;
+    border-color: rgba(58,100,100,1);
 }
 
 .btnCont {
-    background-color: #4b8b63;
-    color: #083028;
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    font-family: 'Roboto Flex', sans-serif; 
+    color: #272a2a;
     padding: 0 18px 0 18px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
+    transition: all 0.5s;
+}
+
+.btnCont:hover {
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    color: #1f2222;
 }
 
 .btnNum {
-    font-size: 30px;
+    font-size: 25px;
 }

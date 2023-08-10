@@ -15,7 +15,7 @@ const NavBar = () => {
       <Navbar expand="lg" className="colorNav">
         <Container>
           <Navbar.Brand as={Link} to={"/"} className='estiloNavText' >
-            <img className="logoNav" src="/imagenes/logoDos.png" alt="Logo de la tienda" />
+            <img className="logoNav" src="/imagenes/logo.png" alt="Logo de la tienda" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">

@@ -1,39 +1,42 @@
-.sectionDetalle {
-    display: flex;  
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 .boxDetalleCompra {
-    width: 20rem;
+    width: 27rem;
     margin: 1rem;
     padding: 5px;
     display: flex;
     align-items: center;
-    font-size: 30px;
+    font-size: 26px;
     text-align: center;
-    background-color: #bfc8ff;
+    background: rgb(39,42,42);
+    background: linear-gradient(164deg, rgb(43, 63, 63) 0%, rgb(113, 156, 154) 28%, rgba(250,251,250,1) 100%);
+    border: 1px solid #294847;
+    box-shadow: 17px 15px 30px #000000;
 }
 
-.boxDetalleTitulo {
-    font-size: 35px;
+.boxDetalleProducto {
+    font-size: 31px;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .boxDetalleCompra button {
-    background-color: #00907e;
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    border: 2px solid black;
+    color: #272a2a;
     padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .boxDetalleCompra button:hover {
-    background-color: #016e62;
-    border: 1px solid #00907e;
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    color: #1f2222;
+    border: 2px solid black;
 }
 
 /* MEDIA QUERY MOVIL */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .boxDetalleCompra {
         font-size: 20px;
     }
@@ -41,4 +44,4 @@
         font-size: 20px;
     }
 
-}
+} */

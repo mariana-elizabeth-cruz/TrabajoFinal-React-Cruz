@@ -1,12 +1,13 @@
 .colorNav {
-    background-color: #426850;
+    background-color: #a2b8b7;
     box-shadow: 1px 1px 15px #000000;
 }
 
 .estiloNavText {
-    font-family: "Montserrat Alternates", sans-serif;
+    font-family: 'Gruppo', sans-serif;
     font-size: 25px;
     font-weight: bold;
+    text-transform: uppercase;
     margin-left: 20px;
     margin-right: 25px;
     padding-left: 15px;
@@ -20,7 +21,7 @@
 }
 
 .logoNav {
-    width: 130px;
+    width: 140px;
 }
 
 /* MEDIA QUERY MOVIL */

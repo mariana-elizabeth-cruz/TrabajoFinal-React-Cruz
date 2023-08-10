@@ -8,11 +8,16 @@
 
 .boxDetail {
     width: 20rem;
-    height: 40rem;
-    font-family: 'Gruppo', sans-serif;
-    background: linear-gradient(to bottom, #4c8d34, #5ea76f);
+    font-family: 'Roboto Flex', sans-serif;
+    text-align: center;
+    background: rgb(39,42,42);
+    background: linear-gradient(164deg, rgba(39,42,42,1) 0%, rgba(94,134,132,1) 28%, rgba(250,251,250,1) 100%);
+    box-shadow: 10px 10px 30px #000000;
     display: grid;
     place-items: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 .detailImg {
@@ -23,11 +28,12 @@
 .textTitulo {
     text-align: center;
     font-size: 50px;
-    font-family: 'Gruppo', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    color: #484d41;
     font-weight: bold;
     letter-spacing: 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding-top: 10px;
 }
 
@@ -37,20 +43,20 @@
 }
 
 .btnCompra {
-    font-size: 25px;
-    background-color: #3a7253;
-    color: black;
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    font-family: 'Roboto Flex', sans-serif; 
+    color: #272a2a;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
-    border: 3px solid black;
-    border-radius: 10px;
-    border-style: outset;
-    border-top: none;
-    border-left: none;
-    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px 18px 8px 18px;
 }
 
 .btnCompra:hover {
-    border-style: inset;
-    border-right: none;
-    border-bottom: none;
+    background: rgb(141,164,172);
+    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    color: #1f2222;
 }

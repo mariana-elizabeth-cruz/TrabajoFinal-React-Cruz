@@ -46,6 +46,7 @@ const Checkout = () => {
       email,
       fecha: new Date()
     };
+    
 
     Promise.all(
       orden.items.map(async (productoOrden) => {
@@ -74,59 +75,65 @@ const Checkout = () => {
         console.log("Error al actualizar stock", error);
         setError("Se produjo un error al actualziar stock.");
       })
-
   }
 
 
   return (
     <section className="checkoutSection">
-      <h2 >Cheackout de la compra</h2>
+      {/* <h2 >Bienvenido al cheackout de tu compra</h2> */}
       <form onSubmit={manejadorFormulario} className="boxForm">
-        {carrito.map(producto => (
-          <div key={producto.id} className="mostrarProducto">
-            <p>
-              {producto.item.nombre} x {producto.cantidad}
-            </p>
-            <p> Precio $ {producto.item.precio} </p>
-          </div>
-        ))}
+        <div className="checkoutBoxProductos">
+          <h3>Detalle del pedido</h3>
+          {carrito.map(producto => (
+            <div key={producto.id} className="mostrarProducto">
+              <p>
+                {producto.item.nombre}
+              </p>
+              <p>
+                Cantidad: {producto.cantidad}
+              </p>
+              <p>
+                Precio $ {producto.item.precio}
+              </p>
+            </div>
+          ))}
+        </div>
         <div className="boxFormularioCompra">
           <div>
-            <h3>Ingrese sus datos</h3>
+            <h3>¡Empecemos!</h3>
+            <h3>Ingresá tus datos para avanzar con la compra</h3>
           </div>
+          <p>Datos obligatorios <strong style={{ color: "red" }} >*</strong> </p>
           <div>
-            <label htmlFor="nombre">Nombre</label>
+            <label htmlFor="nombre">Nombre <strong style={{ color: "red" }} >*</strong> </label>
             <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="apellido">Apellido</label>
+            <label htmlFor="apellido">Apellido <strong style={{ color: "red" }} >*</strong> </label>
             <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="telefono">Telefono</label>
+            <label htmlFor="telefono">Telefono <strong style={{ color: "red" }} >*</strong> </label>
             <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email <strong style={{ color: "red" }} >*</strong> </label>
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
           </div>
           <div>
-            <label htmlFor="">Email confirmacion</label>
+            <label htmlFor="">Email confirmacion <strong style={{ color: "red" }} >*</strong> </label>
             <input type="email" value={emailConfirmacion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
           </div>
-
           {
             error && <p style={{ color: "red" }} > {error} </p>
           }
-
           <button type="submit" className="btnFinalizarCompra" >Finalizar esta compra</button>
         </div>
       </form>
-
       <div className="compraExitosa">
         {
           ordenId && (
-            <strong>Gracias por su compre. Su numero de orden es: {ordenId} </strong>
+            <strong> ¡Gracias por su compra. Su numero de orden es: {ordenId}.! </strong>
           )
         }
       </div>
