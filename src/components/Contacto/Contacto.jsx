@@ -1,4 +1,4 @@
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import { useState } from "react";
 import Swal from 'sweetalert2';
 import emailjs from "emailjs-com"
@@ -45,7 +45,6 @@ const Contacto = () => {
         setNombre("");
         setEmail("");
         setMensaje("");
-
     }
 
 
@@ -54,23 +53,28 @@ const Contacto = () => {
             <div className='estiloContacto'>
                 <h2>Dejanos aquí tu mensaje</h2>
             </div>
-            <div className='estiloFormularioContacto'>
-                <form onSubmit={enviarMensaje} className='formTexto'>
-                    <Form.Group md="mb-3" controlId="nombre">
-                        <Form.Label>Nombre</Form.Label>
-                        <Form.Control required type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Nombre" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="email">
-                        <Form.Label>Correo Electrónico</Form.Label>
-                        <Form.Control required type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="nombre@ejemplo.com" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="mensaje">
-                        <Form.Label>Mensaje</Form.Label>
-                        <Form.Control required as="textarea" rows={5} value={mensaje} onChange={(e) => setMensaje(e.target.value)} />
-                    </Form.Group>
+            <form onSubmit={enviarMensaje} className='formContacto'>
+                <img className="imgContacto" src="/imagenes/enviarMsj.png" alt="Personas enviando mensaje" />
+                <div className='estiloFormularioContacto'>
+                    <div>
+                        <label htmlFor="">Nombre</label>
+                        <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} placeholder="Ingrese su nombre" required />
+                    </div>
+
+                    <div>
+                        <label htmlFor="">Correo Electrónico</label>
+                        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="nombre@ejemplo.com" required />
+                    </div>
+
+                    <div className="textoContacto">
+                        <label htmlFor="">Mensaje</label>
+                        <textarea name="" id="" cols="45" rows="10" value={mensaje} onChange={(e) => setMensaje(e.target.value)} required></textarea>
+                    </div>
+
                     <button type="submit" className='btnEnviarMsj' > Enviar Mensaje </button>
-                </form>
-            </div>
+                </div>
+            </form>
+
         </section>
     )
 }

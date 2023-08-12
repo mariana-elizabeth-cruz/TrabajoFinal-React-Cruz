@@ -28,6 +28,10 @@
     margin: 20px;
     padding: 10px;
 }
+.checkoutBoxProductos h3 {
+    margin: 10px;
+
+}
 
 .mostrarProducto {
     display: flex;
@@ -125,29 +129,3 @@
     color: #1f2222;
 }
 
-/* MEDIA QUERY MOVIL */
-@media screen and (max-width: 767px) {
-    .checkoutSection h2 {
-        font-size: 30px;
-    }
-
-    .mostrarProducto p {
-        font-size: 23px;
-    }
-
-    .boxFormularioCompra h3 {
-        font-size: 35px;
-        text-align: center;
-    }
-
-    .boxFormularioCompra label {
-        font-size: 25px;
-    }
-}
-
-/* MEDIA QUERY TABLET */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .checkoutSection h2 {
-        font-size: 40px;
-    }
-}

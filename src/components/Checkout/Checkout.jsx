@@ -80,7 +80,6 @@ const Checkout = () => {
 
   return (
     <section className="checkoutSection">
-      {/* <h2 >Bienvenido al cheackout de tu compra</h2> */}
       <form onSubmit={manejadorFormulario} className="boxForm">
         <div className="checkoutBoxProductos">
           <h3>Detalle del pedido</h3>
@@ -127,7 +126,7 @@ const Checkout = () => {
           {
             error && <p style={{ color: "red" }} > {error} </p>
           }
-          <button type="submit" className="btnFinalizarCompra" >Finalizar esta compra</button>
+          <button type="submit" className="btnFinalizarCompra" >Finalizar compra</button>
         </div>
       </form>
       <div className="compraExitosa">

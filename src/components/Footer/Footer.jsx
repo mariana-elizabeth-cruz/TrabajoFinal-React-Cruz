@@ -33,7 +33,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <h4> © Todos los derechos reservados | 2023 </h4>
-                <h5> Santiago del Estero </h5>
+                <h4> Santiago del Estero </h4>
             </div>
 
         </footer>

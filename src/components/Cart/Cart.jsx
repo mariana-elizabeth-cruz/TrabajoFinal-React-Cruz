@@ -7,7 +7,7 @@ import './Cart.css'
 
 const Cart = () => {
   const { carrito, vaciarCarrito, total, cantidadTotal } = useContext(CarritoContext);
-  
+
 
   // Retorno temprano
   if (cantidadTotal === 0) {
@@ -19,11 +19,9 @@ const Cart = () => {
           <p>Continúa comprando</p>
           <div className="boxSeguir">
             <Link to={"/"} className="btnCompra" > Ver más productos </Link>
-            <img className="" src="/imagenes/seguirComprando.png" alt="" />
+            <img className="imgSinProductos" src="/imagenes/seguirComprando.png" alt="" />
           </div>
-          
         </div>
-
       </>
     )
   }
@@ -37,7 +35,7 @@ const Cart = () => {
       <div className="detalleTotal">
         <h3> Total $ {total} </h3>
         <h3> Cantidad total: {cantidadTotal} </h3>
-          <button onClick={() => vaciarCarrito()} className="btnVaciar" > Vaciar Carrito </button>
+        <button onClick={() => vaciarCarrito()} className="btnVaciar" > Vaciar Carrito </button>
         <Link to={"/checkout"} className="btnFinCompra" > Finalizar compra </Link>
       </div>
     </section>

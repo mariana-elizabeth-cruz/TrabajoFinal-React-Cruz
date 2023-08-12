@@ -34,14 +34,3 @@
     color: #1f2222;
     border: 2px solid black;
 }
-
-/* MEDIA QUERY MOVIL */
-/* @media screen and (max-width: 767px) {
-    .boxDetalleCompra {
-        font-size: 20px;
-    }
-    .boxDetalleTitulo {
-        font-size: 20px;
-    }
-
-} */

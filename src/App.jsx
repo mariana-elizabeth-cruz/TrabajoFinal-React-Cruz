@@ -7,7 +7,9 @@ import { CarritoProvider } from './context/Context';
 import Cart from './components/Cart/Cart';
 import Checkout from './components/Checkout/Checkout';
 import Footer from './components/Footer/Footer';
+import Error404 from './components/Error/Error404';
 import './App.css'
+
 
 
 const App = () => {
@@ -24,10 +26,11 @@ const App = () => {
             <Route path="/categoria/:idCategoria" element={<ItemListContainer />} />
             <Route path="/item/:idItem" element={<ItemDetailContainer />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/checkout" element={<Checkout/>} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </CarritoProvider>
       </BrowserRouter>
 

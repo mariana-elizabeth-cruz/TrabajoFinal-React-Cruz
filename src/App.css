@@ -1,16 +1,56 @@
 /* Fuente para textos */
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto+Flex:opsz,wght@8..144,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Roboto+Flex:opsz,wght@8..144,200&display=swap");
 
 /* MEDIA QUERY MOVIL */
 @media screen and (max-width: 767px) {
+
+    /* Estilo Navbar */
+    .logoNav {
+        width: 100px;
+    }
+
+    .estiloNavText {
+        font-size: 15px;
+        margin-left: 15px;
+        padding: 5px;
+        transition: none;
+        transform: none;
+    }
+
+    .estiloNavText:hover {
+        transform: scale(1);
+    }
+
+    /* Estilo Footer */
+    footer {
+        height: 200px;
+    }
+
+    .footerText h4 {
+        font-size: 18px;
+    }
+
+    .iconos a:hover {
+        color: #686666;
+    }
+
     /* Estilo ItemListContainer */
     .estiloTexto {
-        font-size: 65px;
+        font-size: 40px;
+        margin: 10px;
+        padding: 5px;
+        letter-spacing: 5px;
     }
 
     .estiloLista {
-        display: flex;
-        align-items: center;
+        display: table-row;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .estiloLista li {
+        margin: 5px;
+        padding: 5px;
     }
 
     .estiloLink {
@@ -33,17 +73,183 @@
 
     /* Estilo Item */
     .boxColor {
-        transition: all 0s;
-    }
-    .boxColor:hover {
-        transform: scale(0);
+        transition: none;
+        transform: none;
     }
 
+    .boxColor:hover {
+        transform: scale(1);
+    }
+
+    .boxDetalle:hover {
+        background: radial-gradient(circle,
+                rgba(250, 251, 250, 1) 0%,
+                rgba(58, 100, 100, 1) 100%);
+    }
+
+    /* Estilo Contador */
+    .btnCont:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo ItemDetail */
+    .btnCompra:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo CartItem */
+    .boxDetalleCompra {
+        width: 22rem;
+        font-size: 20px;
+    }
+
+    .boxDetalleProducto {
+        font-size: 25px;
+    }
+
+    .boxDetalleCompra button:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo Cart */
+
+    .sinProductos {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .btnVaciar {
+        font-size: 20px;
+    }
+
+    .btnVaciar:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    .btnFinCompra {
+        font-size: 19px;
+    }
+
+    .btnFinCompra:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    .detalleTitulo {
+        font-size: 40px;
+    }
+
+    .imgSinProductos {
+        width: 300px;
+    }
+
+    .sinProductos h2 {
+        font-size: 30px;
+    }
+
+    .sinProductos p {
+        font-size: 30px;
+    }
+
+    /* Estilo Checkout */
+    .checkoutBoxProductos {
+        width: 21rem;
+    }
+
+    .mostrarProducto {
+        margin: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .mostrarProducto p {
+        font-size: 15px;
+    }
+
+    .boxFormularioCompra {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .boxFormularioCompra h3 {
+        font-size: 28px;
+        margin: 10px;
+    }
+
+    .boxFormularioCompra label {
+        font-size: 15px;
+    }
+
+    .btnFinalizarCompra {
+        font-size: 18px;
+    }
+
+    .btnFinalizarCompra:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    .btnSeguirComprando {
+        font-size: 17px;
+    }
+
+    .btnSeguirComprando:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo Contacto */
+    .estiloContacto h2 {
+        font-size: 30px;
+    }
+
+    .imgContacto {
+        width: 350px;
+    }
+
+    .estiloFormularioContacto {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .btnEnviarMsj {
+        font-size: 20px;
+    }
+
+    .btnEnviarMsj:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
 }
 
 /* MEDIA QUERY TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
+
     /* Estilo ItemListContainer */
+    .estiloTexto {
+        font-size: 50px;
+    }
+
     .boxGrid {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -58,9 +264,8 @@
         width: 13rem;
         transition: all 0s;
     }
+
     .boxColor:hover {
         transform: scale(0);
     }
-
-    
 }

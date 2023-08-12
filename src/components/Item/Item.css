@@ -34,41 +34,10 @@
 .boxDetalle {
     padding-bottom: 4px;
     border-radius: 10px;
-    /* background-color: #3a6464; */
     background: radial-gradient(circle, rgba(250,251,250,1) 0%, rgba(58,100,100,1) 100%);
     box-shadow: 1px 1px 10px #000000;
-    /* transition: all 0.5s; */
 }
 
 .boxDetalle:hover {
     background: radial-gradient(circle, rgba(58,100,100,1) 0%, rgba(111,141,140,1) 35%, rgba(250,251,250,1) 100%);
 }
-
-/* MEDIA QUERY MOVIL */
-/* @media screen and (max-width: 767px) {
-    .boxColor {
-        transition: all 0s;
-    }
-    .boxColor:hover {
-        transform: scale(0);
-    }
-
-} */
-
-/* MEDIA QUERY TABLET */
-/* @media (min-width: 768px) and (max-width: 1023px) {
-    .boxColor {
-        width: 13rem;
-        transition: all 0s;
-    }
-    .boxColor:hover {
-        transform: scale(0);
-    }
-    guardar colores aqui
-    #fafbfa
-    #e9c362
-    #a2b8b7
-    #a58b6f
-    #484d41
-    
-} */

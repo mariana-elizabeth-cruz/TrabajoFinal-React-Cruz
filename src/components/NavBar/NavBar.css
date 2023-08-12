@@ -4,7 +4,7 @@
 }
 
 .estiloNavText {
-    font-family: 'Gruppo', sans-serif;
+    font-family: "Gruppo", sans-serif;
     font-size: 25px;
     font-weight: bold;
     text-transform: uppercase;
@@ -22,28 +22,4 @@
 
 .logoNav {
     width: 140px;
-}
-
-/* MEDIA QUERY MOVIL */
-@media screen and (max-width: 767px) {
-    .estiloNavText {
-        font-size: 15px;
-        margin: 5px;
-        padding: 3px;
-    }
-
-    .estiloNavText:hover {
-        transition: scale(0);
-    }
-}
-
-/* MEDIA QUERY TABLET */
-@media (min-width: 768px) and (max-width: 1023px) {
-    .estiloNavText {
-        font-size: 20px;
-    }
-
-    .estiloNavText:hover {
-        transition: scale(0);
-    }
 }
