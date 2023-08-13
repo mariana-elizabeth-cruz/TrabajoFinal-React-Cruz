@@ -1,0 +1,70 @@
+.sectionError {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.boxError {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxErrorTexto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxErrorTexto h2 {
+    font-size: 8rem;
+    font-weight: bold;
+    color: #37846d;
+    text-shadow: 5px 5px 15px #578061, 11px 13px 10px #21322c;
+    letter-spacing: 15px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.boxErrorTexto h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #21322c;
+    text-shadow: 5px 5px 6px #000000;
+    margin: 5px;
+    padding: 5px;
+}
+
+.boxVolverMenu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnVolverInicio {
+    text-decoration: none;
+    border: 2px solid #272a2a;
+    border-radius: 7px;
+    font-size: 22px;
+    font-weight: bold;
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(141, 164, 172, 1) 0%,
+            rgba(89, 134, 134, 1) 100%);
+    color: #272a2a;
+    margin: 15px;
+    padding: 5px 15px 5px 15px;
+}
+
+.btnVolverInicio:hover {
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(89, 134, 134, 1) 0%,
+            rgba(141, 164, 172, 1) 100%);
+    color: #1f2222;
+}

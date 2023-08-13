@@ -240,6 +240,30 @@
                 rgba(141, 164, 172, 1) 0%,
                 rgba(89, 134, 134, 1) 100%);
     }
+
+    /* Estilo Error 404 */
+    .boxErrorTexto h2 {
+        font-size: 4rem;
+    }
+
+    .boxErrorTexto h3 {
+        font-size: 1rem;
+    }
+
+    .imgError {
+        width: 220px;
+    }
+
+    .btnVolverInicio {
+        font-size: 15px;
+    }
+
+    .btnVolverInicio:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
 }
 
 /* MEDIA QUERY TABLET */
@@ -384,5 +408,25 @@
 
     .iconos a:hover {
         color: #686666;
+    }
+
+    /* Estilo Error 404 */
+    .boxErrorTexto h2 {
+        font-size: 6rem;
+    }
+
+    .boxErrorTexto h3 {
+        font-size: 2rem;
+    }
+
+    .imgError {
+        width: 370px;
+    }
+
+    .btnVolverInicio:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
     }
 }
