@@ -1,5 +1,5 @@
 .checkoutSection {
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 .checkoutSection h2 {
@@ -28,9 +28,9 @@
     margin: 20px;
     padding: 10px;
 }
+
 .checkoutBoxProductos h3 {
     margin: 10px;
-
 }
 
 .mostrarProducto {
@@ -77,9 +77,12 @@
 }
 
 .btnFinalizarCompra {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(141, 164, 172, 1) 0%,
+            rgba(89, 134, 134, 1) 100%);
     color: #272a2a;
+    border: 2px solid #272a2a;
     border-radius: 6px;
     margin: 30px;
     padding: 10px;
@@ -89,8 +92,10 @@
 }
 
 .btnFinalizarCompra:hover {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(89, 134, 134, 1) 0%,
+            rgba(141, 164, 172, 1) 100%);
     color: #1f2222;
 }
 
@@ -109,9 +114,12 @@
     justify-content: center;
     padding-bottom: 15px;
 }
+
 .btnSeguirComprando {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(141, 164, 172, 1) 0%,
+            rgba(89, 134, 134, 1) 100%);
     color: #272a2a;
     text-align: center;
     font-size: 25px;
@@ -124,8 +132,9 @@
 }
 
 .btnSeguirComprando:hover {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(89, 134, 134, 1) 0%,
+            rgba(141, 164, 172, 1) 100%);
     color: #1f2222;
 }
-

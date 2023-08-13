@@ -121,7 +121,6 @@
     }
 
     /* Estilo Cart */
-
     .sinProductos {
         margin: 1rem;
         padding: 1rem;
@@ -226,6 +225,7 @@
     }
 
     .estiloFormularioContacto {
+        width: 360px;
         margin: 5px;
         padding: 5px;
     }
@@ -245,6 +245,17 @@
 /* MEDIA QUERY TABLET */
 @media (min-width: 768px) and (max-width: 1023px) {
 
+    /* Estilo Navbar */
+    .estiloNavText {
+        font-size: 20px;
+        transition: none;
+        transform: none;
+    }
+
+    .estiloNavText:hover {
+        transform: scale(1);
+    }
+
     /* Estilo ItemListContainer */
     .estiloTexto {
         font-size: 50px;
@@ -261,11 +272,117 @@
 
     /* Estilo Item */
     .boxColor {
-        width: 13rem;
-        transition: all 0s;
+        width: 220px;
+        height: 30rem;
+        transition: none;
+        transform: none;
+    }
+
+    .estiloProd {
+        font-size: 20px;
+        margin: 15px;
+        padding: 10px;
     }
 
     .boxColor:hover {
-        transform: scale(0);
+        transform: scale(1);
+    }
+
+    .boxDetalle:hover {
+        background: radial-gradient(circle,
+                rgba(250, 251, 250, 1) 0%,
+                rgba(58, 100, 100, 1) 100%);
+    }
+
+    /* Estilo Contador */
+    .btnCont:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo ItemDetail */
+    .btnCompra:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo Cart */
+    .detalleTitulo {
+        font-size: 3rem;
+    }
+
+    .btnVaciar:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    .btnFinCompra:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    .sinProductos {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    /* Estilo CartItem */
+    .boxDetalleCompra button:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo Checkout */
+    .checkoutBoxProductos {
+        width: 40rem;
+    }
+
+    .boxFormularioCompra label {
+        font-size: 15px;
+    }
+
+    .btnFinalizarCompra {
+        font-size: 20px;
+    }
+
+    .btnFinalizarCompra:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    .btnSeguirComprando {
+        font-size: 21px;
+    }
+
+    .btnSeguirComprando:hover {
+        background: rgb(141, 164, 172);
+        background: radial-gradient(circle,
+                rgba(141, 164, 172, 1) 0%,
+                rgba(89, 134, 134, 1) 100%);
+    }
+
+    /* Estilo Footer */
+    footer {
+        height: 200px;
+    }
+
+    .footerText h4 {
+        font-size: 18px;
+    }
+
+    .iconos a:hover {
+        color: #686666;
     }
 }

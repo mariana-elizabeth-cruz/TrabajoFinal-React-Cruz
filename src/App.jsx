@@ -33,7 +33,6 @@ const App = () => {
           <Footer />
         </CarritoProvider>
       </BrowserRouter>
-
     </>
 
   )

@@ -2,10 +2,12 @@ footer {
     background-color: #010000;
     height: 230px;
 }
+
 .footerText {
-    font-family: 'Gruppo', sans-serif;
+    font-family: "Gruppo", sans-serif;
     color: #a7a7a7;
 }
+
 .iconos li {
     list-style-type: none;
     display: inline-block;

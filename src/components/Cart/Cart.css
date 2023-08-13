@@ -1,5 +1,5 @@
 .cart {
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 .cartPadreDetalle {
@@ -27,8 +27,10 @@
 }
 
 .btnVaciar {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(141, 164, 172, 1) 0%,
+            rgba(89, 134, 134, 1) 100%);
     color: #272a2a;
     margin: 15px;
     padding: 3px 20px 3px 20px;
@@ -39,14 +41,18 @@
 }
 
 .btnVaciar:hover {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(89, 134, 134, 1) 0%,
+            rgba(141, 164, 172, 1) 100%);
     color: #1f2222;
 }
 
 .btnFinCompra {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(141,164,172,1) 0%, rgba(89,134,134,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(141, 164, 172, 1) 0%,
+            rgba(89, 134, 134, 1) 100%);
     color: #272a2a;
     font-size: 24px;
     font-weight: bold;
@@ -57,19 +63,21 @@
 }
 
 .btnFinCompra:hover {
-    background: rgb(141,164,172);
-    background: radial-gradient(circle, rgba(89,134,134,1) 0%, rgba(141,164,172,1) 100%);
+    background: rgb(141, 164, 172);
+    background: radial-gradient(circle,
+            rgba(89, 134, 134, 1) 0%,
+            rgba(141, 164, 172, 1) 100%);
     color: #1f2222;
 }
 
 .sinProductos {
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
     text-align: center;
     margin: 3rem;
     padding: 2rem;
 }
 
-.sinProductos h2{
+.sinProductos h2 {
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 5px;
@@ -90,11 +98,4 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
-}
-
-/* MEDIA QUERY MOVIL */
-@media screen and (max-width: 767px) {
-    .detalleTitulo {
-        font-size: 40px;
-    }
 }

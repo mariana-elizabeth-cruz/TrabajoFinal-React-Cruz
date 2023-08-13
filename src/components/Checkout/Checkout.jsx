@@ -75,6 +75,12 @@ const Checkout = () => {
         console.log("Error al actualizar stock", error);
         setError("Se produjo un error al actualziar stock.");
       })
+
+      setNombre("");
+      setApellido("");
+      setTelefono("");
+      setEmail("");
+      setEmailConfirmacion("");
   }
 
 
